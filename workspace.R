@@ -1,8 +1,8 @@
 library(tercen)
 library(dplyr)
 
-options("tercen.workflowId" = "01cb95cd7b746443ed9f40625200ef4f")
-options("tercen.stepId"     = "5f395cee-21e9-4289-82bb-54e3fb02fb61")
+options("tercen.workflowId" = "0add2df8c4543198d0b9ab7b55003e76")
+options("tercen.stepId"     = "d732d42f-cb7d-4402-9639-ca768ccba766")
 
 range01 <- function(x, ...){(x - min(x, ...)) / (max(x, ...) - min(x, ...))}
 
@@ -23,7 +23,9 @@ do.scale = function(df, ...){
   return (result)
 }
 
-(ctx = tercenCtx()) %>% 
+ctx <- tercenCtx()
+
+ctx  %>% 
   select(.ci, .ri, .y) %>% 
   group_by(.ci, .ri) %>% 
   summarise(.y = mean(.y)) %>%
