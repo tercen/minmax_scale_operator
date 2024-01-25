@@ -1,9 +1,14 @@
 {
   "name": "Scale Min/Max",
   "description": "Substracts the Min and divides by the Range of a dataset. The value returned is between 0 to 1.",
-  "tags": ["data wrangling"],
-  "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/minmax_scale_operator"]
+  "tags": [
+    "preprocessing",
+    "transformation"
+  ],
+  "authors": [
+    "tercen"
+  ],
+  "urls": [
+    "https://github.com/tercen/minmax_scale_operator"
+  ]
 }
-
-
